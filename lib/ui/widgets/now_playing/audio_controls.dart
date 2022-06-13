@@ -16,8 +16,8 @@ class AudioControls extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         IconButton(
-          onPressed: () {
-            audio.player.currentPosition.valueWrapper!.value.inSeconds > 5
+          onPressed: () { //changed123456789
+            audio.player.currentPosition.value.inSeconds > 5
                 ? audio.player.restart()
                 : audio.player.previous();
           },
